@@ -1396,7 +1396,9 @@
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+    margin-bottom: 200px;
  }
+
   .delux { width: 100%; margin: 0 auto;}
   .delux .container {width: 100%;
     margin: 0 auto;
@@ -1419,7 +1421,7 @@
    order: -1;
   }
   .delux .container .deluxes .deluxe-box .deluxe1 {
-    margin-bottom: 81px; 
+    margin-bottom: 250px;
     margin-top: 27px;
     display: flex;
     flex-direction: column;
@@ -1456,7 +1458,7 @@
   
   .business-deluxes .container .business-deluxe .business-deluxetitle h3 {
     text-align: center;
-    margin-bottom: 81px;
+    
   }
   .business-deluxes .container .business-deluxe .business-deluxebox {
     display: flex;
@@ -1470,7 +1472,7 @@
   } 
  
   .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 {
-    margin-bottom: 81px; 
+    margin-bottom: 334px;
     margin-top: 27px;
     display: flex;
     flex-direction: column;
@@ -1492,7 +1494,7 @@
     flex-direction: column;
   }
   .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 {
-    
+    margin-bottom: 250px;
     margin-top: 27px;
     display: flex;
     flex-direction: column;
@@ -1537,7 +1539,7 @@
  
  
   .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 {
-    margin-bottom: 81px;
+    margin-bottom: 250px;
     margin-top: 27px;
     display: flex;
     flex-direction: column;
@@ -1586,7 +1588,7 @@
   }
   .executive-business .container .executive-business { margin-bottom: 27px;}
   .executive-business .container .executive-business .executive-box .executive1 {
-    margin-bottom: 81px;
+    
     margin-top: 27px;
     display: flex;
     flex-direction: column;
@@ -1609,7 +1611,7 @@
    margin: 0 auto;
   }
   .executive-grand {
-    margin-bottom: 257px;
+    margin-bottom: 524px;
   }
   .executive-grand .container { 
     width: 100%;
@@ -1633,7 +1635,7 @@
   }
 
   .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 {
-    margin-bottom: 81px;
+    margin-bottom: 250px;
     margin-top: 27px;
     display: flex;
     flex-direction: column;
@@ -1694,7 +1696,7 @@
 
   
   .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 {
-    margin-bottom: 200px;
+    margin-bottom: 338px;
     margin-top: 27px;
     display: flex;
     flex-direction: column;
@@ -1716,7 +1718,7 @@
     flex-direction: column;
   }
   .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 {
-    margin-bottom: 81px;
+    margin-bottom: 250px;
     margin-top: 27px;
     display: flex;
     flex-direction: column;
@@ -1752,7 +1754,7 @@
   }
 
   .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 {
-    margin-bottom: 81px;
+    margin-bottom: 350px;
     margin-top: 27px;
     display: flex;
     flex-direction: column;
@@ -1763,7 +1765,7 @@
     display: flex; justify-content: center;
   }
   .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 .read-more{
-    width: 130px; height: 50px; background: var(--maincolor); margin: 27px 10px;
+    width: 130px; height: 40px; background: var(--maincolor); margin: 27px 10px;
 
   }
   
@@ -1988,16 +1990,23 @@
 /* 모바일 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
-  
+  .section { margin-bottom: 200px;}
   .business-deluxes .container .business-deluxe .business-deluxetitle h3{
     font-size: 16px;
   }
+  .suites .container .suite .suite-box .suite1 {
+    margin-bottom: 214px;}
+  
+  
   .title1image {width: 100%; margin: 0 auto;}
   .container {width: 100%;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
+    margin-bottom: 200px;
  }
+
+
 
   .barrier-free .container .barrier-frees .barrier-freetitle h3 {
     font-size: 14px;
