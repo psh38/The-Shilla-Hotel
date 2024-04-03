@@ -41,20 +41,20 @@ $(function(){
 	});
 	// $('.swiper-slide').hover(function() {swiper.autoplay.stop();}, function(){swiper.autoplay.start();});
 	// 자동 재생 시작, 정지 버튼 만들기 스크립트
-	console.log(swiper);
+	// console.log(swiper);
 
 	$('.swiper-pause').click(function(){
 		let targetId = $(this).closest('.tabn').attr('data-ind');
-		console.log('멈춤');
+		// console.log('멈춤');
 		swiper[targetId].autoplay.stop()
 	})
 	$('.swiper-play').click(function(){
 		let targetId = $(this).closest('.tabn').attr('data-ind');
-		console.log('시작');
+		// console.log('시작');
 		swiper[targetId].autoplay.start()
 	})
 	
-		console.log(swiper);
+		// console.log(swiper);
 	$('.swiper .prev').click(function(){
 	let id= $(this).closest('.swiper').attr('data-id');
 	swiper[id].slidePrev()
@@ -73,7 +73,7 @@ $(function(){
 		tabmenu.removeClass('active');
 		$(this).addClass('active');
 		let targetIdx = $(this).parent().index();  // 윗부모
-		console.log(targetIdx);
+		// console.log(targetIdx);
 		tabcontent.hide(); // 모든 컨텐츠가 안보이게
 		tabcontent.eq(targetIdx).show(); // 인덱스 번호로 요소를 선택하는 메서드 eq
 		tabcontent.eq(targetIdx).find('.swiper-pagination span').eq(0).trigger('click');
@@ -88,7 +88,7 @@ $(function(){
 		tabmenu2.removeClass('active');
 		$(this).addClass('active');
 		let targetIdx2 = $(this).parent().index();  // 윗부모
-		console.log(targetIdx2);
+		// console.log(targetIdx2);
 		tabcontent2.hide(); // 모든 컨텐츠가 안보이게
 		tabcontent2.eq(targetIdx2).show(); // 인덱스 번호로 요소를 선택하는 메서드 eq
 		tabcontent2.eq(targetIdx2).find('.swiper-pagination span').eq(0).trigger('click');
@@ -309,7 +309,7 @@ $(window).on('scroll', function() {
 			let currentValue = parseInt(ipt.val()); //문자열을 숫자열로 변경
 			let maxValue = parseInt(ipt.attr("max"));
 			let currentCount = getCurrentCount($(this));
-			console.log('ddddddd', currentCount, currentValue, maxValue, ipt)
+			// console.log('ddddddd', currentCount, currentValue, maxValue, ipt)
 			if(currentCount < 3 && currentValue < maxValue) {
 				ipt.val(currentValue + 1);
 				updateCount(ipt);
@@ -425,7 +425,7 @@ $(window).on('scroll', function() {
 		});
 	
 		// form 영역
-		console.log('form 영역', $(".reservation-area .pick-area .guest-info-wrap"))
+		// console.log('form 영역', $(".reservation-area .pick-area .guest-info-wrap"))
 		
 		$("<div>").datepicker({
 			dateFormat: 'yy.mm.dd',
@@ -650,7 +650,7 @@ $(window).on('scroll', function() {
 
 		let popup = $('.popup');
 		let input = popup.find('input');
-		console.log(input);
+		// console.log(input);
 		let closeBtn = popup.find('button');
 		
 		closeBtn.click(function(){
@@ -666,7 +666,7 @@ $(window).on('scroll', function() {
 		  popup.hide();
 		})
 		function setCookie(name,val,day){
-			console.log('쿠키생성함수');
+			// console.log('쿠키생성함수');
 			let date = new Date();
 			date.setDate(date.getDate()+day);
 			document.cookie = `${name}=${val};Expires=${date}`; 
@@ -681,7 +681,7 @@ $(window).on('scroll', function() {
 		  let cookieArr = document.cookie.split(';');
 		  let visited = false;
 		
-		  console.log(cookieArr);
+		//   console.log(cookieArr);
 		  for(let cookie of cookieArr){
 			if(cookie.indexOf(name) > -1 ){
 			  visited = true;
