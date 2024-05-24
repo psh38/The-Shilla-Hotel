@@ -659,7 +659,7 @@ $(window).on('scroll', function() {
 			// 쿠키생성
 			setCookie('Company','ABC',1);
 		  }else{
-			// 쿠기삭제
+			// 쿠키삭제
 			delCookie('Company');
 		  }
 		
