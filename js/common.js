@@ -1,6 +1,6 @@
 $(function(){ 
 
-	// header sticky
+	//header sticky
 	$($(window)).scroll(function(){
 		console.log($(window).innerHeight())
 		if($('main').hasClass('main')){
