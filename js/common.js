@@ -1,16 +1,16 @@
 $(function(){ 
 
 	// header sticky
-	// $($(window)).scroll(function(){
-	// 	console.log($(window).innerHeight())
-	// 	if($('main').hasClass('main')){
-	// 		if($(window).scrollTop() >= $(window).innerHeight()){
-	// 			$('header').addClass('sticky');
-	// 		}else{
-	// 			$('header').removeClass('sticky');
-	// 		}
-	// 	}
-	// })
+	$($(window)).scroll(function(){
+		console.log($(window).innerHeight())
+		if($('main').hasClass('main')){
+			if($(window).scrollTop() >= $(window).innerHeight()){
+				$('header').addClass('sticky');
+			}else{
+				$('header').removeClass('sticky');
+			}
+		}
+	})
 
 	// header footer load
   $('#header').load('header.html', function(){
